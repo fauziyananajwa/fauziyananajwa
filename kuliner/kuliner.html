@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wisata Banyuwangi</title>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+
+      body {
+        background: #c0c0c0;
+        color: #333;
+      }
+
+      .container {
+        max-width: 80%;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #ffffff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+      }
+
+      /* Banner di bagian atas */
+      .banner {
+        height: 280px;
+        background: url("baner.jpg") center/cover no-repeat;
+        position: relative;
+      }
+
+      .banner::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.35);
+      }
+
+      .banner h1 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        color: white;
+        font-size: 10rem;
+        font-weight: 700;
+        text-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+        transform: translate(-50%, -50%);
+      }
+
+      .section-title {
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 20px;
+      }
+
+      /* Card destinasi */
+      .destinations {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 25px;
+      }
+
+      .card {
+        background: white;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        transition: 0.3s;
+      }
+
+      .card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+      }
+
+      .card img {
+        width: 100%;
+        height: 160px;
+        object-fit: cover;
+      }
+
+      .card .info {
+        padding: 15px;
+      }
+
+      .card .info h3 {
+        font-size: 1.2rem;
+        font-weight: 600;
+      }
+
+      .card .info p {
+        font-size: 0.9rem;
+        margin-top: 6px;
+        color: #666;
+      }
+
+      /* Tombol kembali */
+      .back-btn {
+        display: inline-block;
+        margin-top: 30px;
+        padding: 10px 20px;
+        background: #00bcd4;
+        color: white;
+        text-decoration: none;
+        border-radius: 25px;
+        transition: 0.3s;
+      }
+
+      .back-btn:hover {
+        background: #0097a7;
+      }
+
+      /* Footer */
+      footer {
+        text-align: center;
+        padding: 20px;
+        background: #111;
+        color: white;
+        margin-top: 50px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- Banner -->
+      <div class="banner">
+        <h1>KULINER</h1>
+      </div>
+
+      <!-- Konten -->
+      <div class="container">
+        <h2 class="section-title">Rekomendasi Kuliner</h2>
+
+        <div class="destinations">
+          <div class="card">
+            <img
+              src="https://ik.imagekit.io/tvlk/blog/2025/02/HxGnSjxd-image.png"
+            />
+            <div class="info">
+              <h3>Sego Tempong</h3>
+              <p>Sambal Pedas yang Memanjakan Lidah.</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <img
+              src="https://ik.imagekit.io/tvlk/blog/2021/06/rujak-soto_shutterstock_1367353958.jpg"
+            />
+            <div class="info">
+              <h3>Pondok Rujak Soto</h3>
+              <p>Rujak cingur dan kuah soto kaya rempah.</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <img
+              src="https://ik.imagekit.io/tvlk/blog/2022/04/shutterstock_1594694257.jpg"
+            />
+            <div class="info">
+              <h3>Rawon Bik Ati</h3>
+              <p>kuah rawon yang lebih gurih serta kaya rempah.</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <img
+              src="https://ik.imagekit.io/tvlk/blog/2022/05/shutterstock_796819504.jpg"
+            />
+            <div class="info">
+              <h3>Pecel Pitik Bu Widi</h3>
+              <p>
+                ayam kampung yang dimasak dengan bumbu kelapa parut dan
+                rempah-rempah khas Banyuwangi.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="../index .html" class="back-btn">← Kembali</a>
+    </div>
+
+    <footer>© 2025 NAJWA FAUZIYANA ZULFA.</footer>
+  </body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Statistik Kunjungan</title>
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ChartJS -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <style>
+      body {
+        margin: 0;
+        background: #eef2f5;
+        font-family: "Poppins", sans-serif;
+        text-align: center;
+      }
+
+      h2 {
+        margin-top: 25px;
+        font-size: 24px;
+        font-weight: 600;
+      }
+
+      .chart-box {
+        width: 80%;
+        max-width: 900px;
+        margin: 30px auto;
+        background: #fff;
+        padding: 25px;
+        border-radius: 12px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      .btn-back {
+        display: inline-block;
+        background: #00bcd4;
+        padding: 10px 25px;
+        color: #fff;
+        border-radius: 8px;
+        text-decoration: none;
+        font-size: 14px;
+        margin-top: 20px;
+        transition: 0.2s;
+      }
+
+      .btn-back:hover {
+        background: #67ac59;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h2>Total Pengunjung Saat Ini: <span id="totalPengunjung">0</span></h2>
+
+    <div class="chart-box">
+      <h3>Kunjungan Situs Per Jam</h3>
+      <canvas id="grafikKunjungan" style="margin-top: 20px"></canvas>
+    </div>
+
+    <a href="index .html" class="btn-back">← Kembali</a>
+
+    <script>
+      /* -----------------------------
+       AMBIL DATA TOTAL PENGUNJUNG
+    ------------------------------*/
+      let total = localStorage.getItem("jumlah_pengunjung");
+      if (!total) total = 0;
+      document.getElementById("totalPengunjung").innerText = total;
+
+      /* -----------------------------
+       AMBIL DATA PER JAM (BUAT DUMMY KALAU KOSONG)
+    ------------------------------*/
+      let dataPerJam = localStorage.getItem("kunjungan_per_jam");
+
+      if (!dataPerJam) {
+        // Dummy data awal (semua 0)
+        dataPerJam = new Array(24).fill(0);
+        localStorage.setItem("kunjungan_per_jam", JSON.stringify(dataPerJam));
+      } else {
+        dataPerJam = JSON.parse(dataPerJam);
+      }
+
+      console.log("Data Per Jam:", dataPerJam);
+
+      /* -----------------------------
+              GRAFIK CHARTJS
+    ------------------------------*/
+      const ctx = document.getElementById("grafikKunjungan").getContext("2d");
+
+      new Chart(ctx, {
+        type: "line",
+        data: {
+          labels: [
+            "00",
+            "01",
+            "02",
+            "03",
+            "04",
+            "05",
+            "06",
+            "07",
+            "08",
+            "09",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+          ],
+          datasets: [
+            {
+              label: "Kunjungan per Jam",
+              data: dataPerJam,
+              borderColor: "#4caf50",
+              backgroundColor: "rgba(76, 175, 80, 0.2)",
+              borderWidth: 2,
+              tension: 0.4,
+            },
+          ],
+        },
+        options: {
+          scales: {
+            y: { beginAtZero: true },
+          },
+        },
+      });
+    </script>
+  </body>
+</html>

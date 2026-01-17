@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profil Banyuwangi</title>
+    <style>
+      /* CSS internal untuk styling dasar */
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+        background-color: #c0c0c0;
+        color: #333;
+      }
+
+      .container {
+        max-width: 80%;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #ffffff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+      }
+
+      .profile-header {
+        text-align: center;
+        border-bottom: 1px solid #eee;
+        padding-bottom: 20px;
+      }
+
+      .profile-pic {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: contain;
+        background-color: #fff;
+        border: 4px solid #333;
+      }
+
+      h1 {
+        margin-top: 10px;
+        font-size: 2em;
+      }
+
+      .profile-bio {
+        margin-top: 20px;
+      }
+
+      .contact-info ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      .contact-info li {
+        margin-bottom: 10px;
+      }
+
+      /* Footer */
+      footer {
+        text-align: center;
+        padding: 20px;
+        background: #111;
+        color: white;
+        margin-top: 50px;
+      }
+
+      .video-container {
+        width: 80%; /* Lebar 80% dari container */
+        margin: auto; /* Pusatkan */
+      }
+      .video-container video {
+        width: 100%; /* Video akan mengisi lebar container */
+        height: auto; /* Tinggi otomatis menyesuaikan */
+      }
+      .back-btn {
+        display: inline-block;
+        margin-top: 30px;
+        padding: 10px 20px;
+        background: #00bcd4;
+        color: white;
+        text-decoration: none;
+        border-radius: 25px;
+        transition: 0.3s;
+      }
+
+      .back-btn:hover {
+        background: #0097a7;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header class="profile-header">
+        <!-- Ganti 'via.placeholder.com' dengan URL gambar Anda atau letakkan file gambar di folder yang sama (misal: 'foto-profil.jpg') -->
+        <img src="logo_bwi_small.png" alt="Foto Profil" class="profile-pic" />
+        <h1>Banyuwangi</h1>
+      </header>
+
+      <main class="profile-bio">
+        <h2>Sejarah</h2>
+        <p style="text-align: justify">
+          Banyuwangi merupakan wilayah yang memiliki sejarah panjang dan kaya,
+          dengan akar budaya yang kuat di ujung timur Pulau Jawa. Nama
+          “Banyuwangi” berasal dari kisah legenda Sri Tanjung seorang perempuan
+          setia yang difitnah oleh suaminya, Sidapaksa. Setelah dibunuh, tubuh
+          Sri Tanjung dipercaya mengeluarkan air harum (banyu wangi) sebagai
+          simbol kemurnian dan kesuciannya.
+        </p>
+        <p style="text-align: justify">
+          Kisah ini kemudian menjadi identitas kultural sekaligus asal-usul nama
+          Banyuwangi. Pada masa kerajaan-kerajaan Nusantara, wilayah Banyuwangi
+          termasuk dalam pengaruh Kerajaan Blambangan, kerajaan Hindu terakhir
+          di Jawa yang bertahan hingga abad ke-18. Blambangan dikenal sebagai
+          benteng pertahanan terakhir budaya Hindu–Jawa terhadap ekspansi
+          kerajaan-kerajaan Islam di masa itu. Kerajaan ini juga terkenal kuat
+          dalam menghadapi berbagai serangan eksternal, termasuk konflik dengan
+          Mataram dan VOC. Memasuki abad ke-18, Banyuwangi mulai berada di bawah
+          kendali kolonial Belanda setelah berakhirnya kekuasaan Blambangan.
+        </p>
+        <p style="text-align: justify">
+          Pada masa kolonial, wilayah ini berkembang sebagai kawasan agraris dan
+          pelabuhan yang penting, serta menjadi daerah strategis karena
+          posisinya yang menghubungkan Jawa dan Bali. Setelah Indonesia merdeka,
+          Banyuwangi resmi menjadi kabupaten dan terus mengalami perkembangan di
+          berbagai sektor. Keberagaman etnis meliputi Suku Osing, Jawa, Madura,
+          Bali, dan lainnya membentuk karakter sosial budaya yang unik. Tradisi
+          dan kesenian seperti Gandrung, Kebo-keboan, serta upacara adat Osing
+          tetap hidup hingga kini. Dalam beberapa dekade terakhir, Banyuwangi
+          tumbuh menjadi daerah yang maju melalui inovasi pemerintah daerah,
+          pengembangan pariwisata seperti Kawah Ijen, Pulau Merah, dan Taman
+          Nasional Alas Purwo, serta agenda pembangunan berkelanjutan yang
+          mendorongnya dikenal secara nasional dan internasional.
+        </p>
+
+        <h2><center>Cuplikan</center></h2>
+        <center>
+          <div class="video-container">
+            <video controls>
+              <source src="BANYUWANGI.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </center>
+
+        <h2>Kontak</h2>
+        <div class="contact-info">
+          <ul>
+            <li>
+              Email:
+              <a href="mailto:emailanda@example.com">najwazulfa123@gmail.com</a>
+            </li>
+            <li>LinkedIn: <a href="linkedin.com" target="_blank"></a></li>
+            <li>
+              Website:
+              <a href="https://websiteanda.com" target="_blank"></a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Contoh link kembali ke halaman index.html -->
+        <a href="index .html" class="back-btn">← Kembali </a>
+      </main>
+    </div>
+    <div>
+      <footer class="footer">
+        <p>&copy; 2025 NAJWA FAUZIYANA ZULFA.</p>
+      </footer>
+    </div>
+  </body>
+</html>

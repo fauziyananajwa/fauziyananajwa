@@ -1,0 +1,233 @@
+{
+  "KEYFRAMES": {
+    "camera": {
+      "groups": [
+        {
+          "enabled": true,
+          "keyframes": [
+            {
+              "camera": {
+                "fx": 12295184.055468522,
+                "fy": -831799.2524296138,
+                "fz": 0,
+                "x": 12295184.055468522,
+                "y": -844665.59503497,
+                "z": 12866.342605356127
+              },
+              "delay": 0,
+              "duration": 2000,
+              "easing": 1,
+              "name": "keyframe 1",
+              "type": 128
+            }
+          ],
+          "name": "Group",
+          "type": 64
+        }
+      ]
+    },
+    "enabled": true,
+    "layers": {
+      "Alos_Palsar20180320081637032": {
+        "enabled": true,
+        "groups": []
+      },
+      "fp:8c1f154f": {
+        "enabled": true,
+        "groups": []
+      },
+      "plugin:gsielevtile": {
+        "enabled": true,
+        "groups": []
+      }
+    },
+    "repeat": false,
+    "startOnLoad": true
+  },
+  "LAYERS": [
+    {
+      "geomType": 0,
+      "layerId": "Alos_Palsar20180320081637032",
+      "name": "Alos-Palsar",
+      "properties": {
+        "checkBox_Clickable": true,
+        "checkBox_Clip": false,
+        "checkBox_Frame": false,
+        "checkBox_Sides": false,
+        "checkBox_Tiles": false,
+        "checkBox_Visible": true,
+        "checkBox_Wireframe": false,
+        "colorButton_Edge": [
+          0,
+          0,
+          0,
+          255
+        ],
+        "colorButton_Side": [
+          204,
+          187,
+          170,
+          255
+        ],
+        "colorButton_Wireframe": [
+          0,
+          0,
+          0,
+          255
+        ],
+        "comboBox_ClipLayer": null,
+        "horizontalSlider_DEMSize": 2,
+        "lineEdit_Bottom": "0",
+        "lineEdit_Name": "",
+        "materials": [
+          {
+            "id": "ea9bd790",
+            "name": "map (canvas)",
+            "properties": {},
+            "type": 0
+          }
+        ],
+        "mtlId": "ea9bd790",
+        "spinBox_Roughening": 1,
+        "spinBox_Size": 3
+      },
+      "visible": true
+    },
+    {
+      "geomType": 0,
+      "layerId": "plugin:gsielevtile",
+      "name": "GSI Elevation Tile",
+      "properties": {
+        "checkBox_Clickable": true,
+        "checkBox_Clip": false,
+        "checkBox_Frame": false,
+        "checkBox_Sides": false,
+        "checkBox_Tiles": false,
+        "checkBox_Visible": true,
+        "checkBox_Wireframe": false,
+        "colorButton_Edge": [
+          0,
+          0,
+          0,
+          255
+        ],
+        "colorButton_Side": [
+          204,
+          187,
+          170,
+          255
+        ],
+        "colorButton_Wireframe": [
+          0,
+          0,
+          0,
+          255
+        ],
+        "comboBox_ClipLayer": null,
+        "horizontalSlider_DEMSize": 2,
+        "lineEdit_Bottom": "0",
+        "lineEdit_Name": "",
+        "materials": [
+          {
+            "id": "ad84786f",
+            "name": "map (canvas)",
+            "properties": {},
+            "type": 0
+          }
+        ],
+        "mtlId": "ad84786f",
+        "spinBox_Roughening": 1,
+        "spinBox_Size": 3
+      },
+      "visible": true
+    },
+    {
+      "geomType": 0,
+      "layerId": "fp:8c1f154f",
+      "name": "Flat Plane",
+      "properties": {
+        "checkBox_Clickable": true,
+        "checkBox_Frame": false,
+        "checkBox_Sides": false,
+        "checkBox_Tiles": false,
+        "checkBox_Visible": true,
+        "checkBox_Wireframe": false,
+        "colorButton_Edge": [
+          0,
+          0,
+          0,
+          255
+        ],
+        "colorButton_Side": [
+          204,
+          187,
+          170,
+          255
+        ],
+        "colorButton_Wireframe": [
+          0,
+          0,
+          0,
+          255
+        ],
+        "lineEdit_Altitude": "0",
+        "lineEdit_Bottom": "0",
+        "lineEdit_Name": "",
+        "materials": [
+          {
+            "id": "9e47b013",
+            "name": "map (canvas)",
+            "properties": {},
+            "type": 0
+          }
+        ],
+        "mtlId": "9e47b013",
+        "spinBox_Size": 3
+      },
+      "visible": true
+    }
+  ],
+  "OPT": {
+    "animation.enabled": true,
+    "animation.startOnLoad": true,
+    "localMode": true
+  },
+  "OutputFilename": "C:/xampp/htdocs/WEBGIS3D\\index.html",
+  "SCENE": {
+    "checkBox_FixAspectRatio": true,
+    "checkBox_Outline": true,
+    "colorButton_Color": [
+      0,
+      0,
+      0,
+      255
+    ],
+    "colorButton_Fog": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "comboBox_MaterialType": 0,
+    "comboBox_xyShift": false,
+    "groupBox_Fog": false,
+    "lineEdit_CenterX": "12295184.055468522",
+    "lineEdit_CenterY": "-831799.2524296138",
+    "lineEdit_Height": "12866.342605356127",
+    "lineEdit_Rotation": "0",
+    "lineEdit_Width": "12866.342605356127",
+    "lineEdit_zFactor": "1.0",
+    "radioButton_PtLight": true,
+    "radioButton_WGS84": true,
+    "slider_Fog": 41
+  },
+  "Template": "3DViewer.html",
+  "Title": "ProjectWebGIS3D",
+  "Version": 20800,
+  "WIDGETS": {
+    "NorthArrow": {
+      "color": "0xe22329",
+      "visible": true
+    }
+  }
+}

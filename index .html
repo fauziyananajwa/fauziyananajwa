@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NAJWA</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="fan-menu">
+      <div class="main-button"></div>
+      <nav class="menu-items">
+        <a href="profile.html" style="--i: 1" class="item">Profile</a>
+        <a href="peta.html" style="--i: 2" class="item">Peta</a>
+        <a href="DATA3D/index terbaru.html" style="--i: 3" class="item">3D</a>
+        <a href="wisata/wisata.html" style="--i: 4" class="item">Wisata</a>
+        <a href="kuliner/kuliner.html" style="--i: 5" class="item">Kuliner</a>
+        <a href="statistik.html" style="--i: 6" class="item">Pengunjung</a>
+      </nav>
+    </div>
+    <div class="video-container">
+      <video autoplay muted loop playsinline id="bg-video">
+        <source
+          src="beautiful-aerial-shot-of-the-blue-sea.mp4"
+          type="video/mp4"
+        />
+      </video>
+      <div class="overlay"></div>
+    </div>
+
+    <div class="content">
+      <h1 class="main-title">Banyuwangi</h1>
+      <p class="subtitle">
+        The most beautiful views come after the hardest climbs
+      </p>
+    </div>
+    <script>
+      // Ambil jumlah pengunjung dari localStorage
+      let jumlah = localStorage.getItem("jumlah_pengunjung");
+
+      // Jika belum ada, buat awal = 0
+      if (!jumlah) {
+        jumlah = 0;
+      }
+
+      // Tambah karena halaman dibuka / di-refresh
+      jumlah++;
+
+      // Simpan kembali
+      localStorage.setItem("jumlah_pengunjung", jumlah);
+
+      console.log("Total pengunjung:", jumlah); // hanya untuk debugging
+      const jam = new Date().getHours();
+      let dataPerJam = localStorage.getItem("kunjungan_per_jam");
+
+      if (dataPerJam) {
+        dataPerJam = JSON.parse(dataPerJam);
+      } else {
+        dataPerJam = new Array(24).fill(0);
+      }
+
+      dataPerJam[jam]++;
+
+      localStorage.setItem("kunjungan_per_jam", JSON.stringify(dataPerJam));
+    </script>
+  </body>
+</html>
